@@ -118,7 +118,7 @@ void display(){
     glPopMatrix();
 
     glutSwapBuffers();
-    //glutPostRedisplay();
+    glutPostRedisplay();
 }
 
 int main(int argc, char** argv){
