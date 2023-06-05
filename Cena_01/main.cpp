@@ -14,6 +14,9 @@ void lighting(){
     glLightfv(GL_LIGHT0, GL_DIFFUSE, white);          //define cor difusa da luz
     glLightfv(GL_LIGHT0, GL_SPECULAR, white);         //define cor especular da luz
 
+    float global_ambient[4] = {0.2f, 0.2f, 0.2f, 1.0f};
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, global_ambient);
+
     //ativa a iluminação
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
